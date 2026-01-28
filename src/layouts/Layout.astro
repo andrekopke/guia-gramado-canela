@@ -11,7 +11,10 @@ const { title } = Astro.props;
 <body style="margin:0; font-family: sans-serif; display:flex; flex-direction:column; min-height:100vh; background:#f4f4f4;">
     <nav style={`background:${THEME.primaria}; color:white; padding:1.5rem; text-align:center;`}>
         <a href="/" style="color:white; text-decoration:none; font-size:1.5rem; font-weight:bold;">{SITE_TITLE}</a>
-    </nav>
+    </nav <div style="margin-top: 10px;">
+    <a href="/" style="color:white; text-decoration:none; margin-right: 15px;">Home</a>
+    <a href="/sobre" style="color:white; text-decoration:none;">Sobre</a>
+</div>
     <main style="flex:1; max-width:800px; margin:2rem auto; padding:2rem; background:white; border-radius:12px; width:90%;">
         <slot />
     </main>

@@ -1,0 +1,7 @@
+{
+  "name": "guia-gramado-canela",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": { "dev": "astro dev", "build": "astro build" },
+  "dependencies": { "astro": "^4.0.0" }
+}

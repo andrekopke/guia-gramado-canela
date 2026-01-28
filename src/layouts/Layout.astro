@@ -1,0 +1,22 @@
+---
+import { THEME, SITE_TITLE } from '../consts';
+const { title } = Astro.props;
+---
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title} | {SITE_TITLE}</title>
+</head>
+<body style="margin:0; font-family: sans-serif; display:flex; flex-direction:column; min-height:100vh; background:#f4f4f4;">
+    <nav style={`background:${THEME.primaria}; color:white; padding:1.5rem; text-align:center;`}>
+        <a href="/" style="color:white; text-decoration:none; font-size:1.5rem; font-weight:bold;">{SITE_TITLE}</a>
+    </nav>
+    <main style="flex:1; max-width:800px; margin:2rem auto; padding:2rem; background:white; border-radius:12px; width:90%;">
+        <slot />
+    </main>
+    <footer style="background:#222; color:white; padding:2rem; text-align:center;">
+        <p>&copy; 2026 {SITE_TITLE}</p>
+    </footer>
+</body>
+</html>

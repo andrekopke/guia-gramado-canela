@@ -1,0 +1,17 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+const posts = await getCollection('blog');
+---
+<Layout title="Início">
+    <h1 style="color:#333;">Dicas de Gramado e Canela</h1>
+    <p>Confira nossas últimas atualizações:</p>
+    <div style="display:grid; gap:20px; margin-top:20px;">
+        {posts.map(post => (
+            <a href={`/blog/${post.slug}`} style="text-decoration:none; color:inherit; border:1px solid #ddd; padding:15px; border-radius:8px;">
+                <h2 style="margin:0 0 10px 0; color:#8B0000;">{post.data.title}</h2>
+                <p style="margin:0; font-size:0.9rem; color:#666;">{post.data.description}</p>
+            </a>
+        ))}
+    </div>
+</Layout>

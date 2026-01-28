@@ -1,10 +1,8 @@
 ---
----
 title: "Gramado com crianças: Os parques aceitam carrinhos? Tem fraldário?"
 description: "Um guia prático para pais que estão planejando levar os pequenos para a Serra Gaúcha."
 pubDate: "2026-01-28"
 heroImage: "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?q=80&w=1000"
----
 ---
 Sim, a maioria dos parques como Mini Mundo e Terra Mágica Florybal são totalmente acessíveis para carrinhos de bebê e possuem ótima estrutura de apoio.
 

@@ -2,7 +2,7 @@
 title: "Dreams Entertainment Group: Guia de todas as atrações e como economizar"
 description: "Dúvidas sobre o Museu de Cera, Harley Motor Show e mais? Veja por que o passaporte vale mais a pena."
 pubDate: "2026-01-28"
-heroImage: "[https://images.unsplash.com/photo-1584281722571-042839958994?q=80&w=1000](https://images.unsplash.com/photo-1584281722571-042839958994?q=80&w=1000)"
+heroImage: "[https://ibb.co/F4v1KnZG)"
 ---
 
 O Grupo Dreams é responsável por algumas das fotos mais famosas que você vê no Instagram de quem visita Gramado.

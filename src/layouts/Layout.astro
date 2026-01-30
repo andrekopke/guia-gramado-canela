@@ -9,12 +9,6 @@ const { title } = Astro.props;
     <title>{title} | {SITE_TITLE}</title>
 </head>
 <body style="margin:0; font-family: sans-serif; display:flex; flex-direction:column; min-height:100vh; background:#f4f4f4;">
-   <nav style={`background:${THEME.primaria}; color:white; padding:1.5rem; text-align:center;`}>
-    <a href="/" style="color:white; text-decoration:none; font-size:1.5rem; font-weight:bold; display:block; margin-bottom:10px;">{SITE_TITLE}</a>
-    <div style="display:flex; justify-content:center; gap:20px;">
-        <a href="/" style="color:white; text-decoration:none; font-weight:bold;">Home</a>
-        <a href="/sobre" style="color:white; text-decoration:none; font-weight:bold;">Sobre</a>
-    </div>
 <nav style={`background:${THEME.primaria}; color:white; padding:1.5rem; text-align:center;`}>
     <a href="/" style="color:white; text-decoration:none; font-size:1.5rem; font-weight:bold; display:block; margin-bottom:10px;">{SITE_TITLE}</a>
     <div style="display:flex; justify-content:center; gap:20px;">

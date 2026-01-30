@@ -9,19 +9,23 @@ const { title } = Astro.props;
     <title>{title} | {SITE_TITLE}</title>
 </head>
 <body style="margin:0; font-family: sans-serif; display:flex; flex-direction:column; min-height:100vh; background:#f4f4f4;">
-<nav style={`background:${THEME.primaria}; color:white; padding:1.5rem; text-align:center;`}>
-    <a href="/" style="color:white; text-decoration:none; font-size:1.5rem; font-weight:bold; display:block; margin-bottom:10px;">{SITE_TITLE}</a>
+<nav style={`background:${THEME.primaria}; color:white; padding:1rem 2rem; display:flex; align-items:center; justify-content:space-between;`}>
     
-    <div style="display:flex; flex-direction:column; align-items:center; gap:15px;">
-        <div style="display:flex; gap:20px;">
-            <a href="/" style="color:white; text-decoration:none; font-weight:bold;">Home</a>
-            <a href="/sobre" style="color:white; text-decoration:none; font-weight:bold;">Sobre</a>
-        </div>
+    <div style="display:flex; align-items:center; gap:15px;">
+        <a href="/" style="display:flex; align-items:center; text-decoration:none; color:white;">
+            <img src="/logo.png" alt="Logo Guia Gramado Canela" style="height: 50px; width: auto;" />
+            <span style="font-size:1.5rem; font-weight:bold; margin-left:10px;">{SITE_TITLE}</span>
+        </a>
+    </div>
 
-        <form action="https://www.google.com/search" method="get" target="_blank" style="margin-top: 5px;">
+    <div style="display:flex; align-items:center; gap:20px;">
+        <a href="/" style="color:white; text-decoration:none; font-weight:bold;">Home</a>
+        <a href="/sobre" style="color:white; text-decoration:none; font-weight:bold;">Sobre</a>
+        
+        <form action="https://www.google.com/search" method="get" target="_blank" style="margin-left:15px; display:flex; align-items:center;">
             <input type="hidden" name="q" value="site:guiagramadocanela.com.br">
-            <input type="text" name="q" placeholder="Buscar no guia..." style="padding: 5px 10px; border-radius: 20px; border: none; width: 180px; outline: none;">
-            <button type="submit" style="background: none; border: none; cursor: pointer; font-size: 1.2rem; vertical-align: middle;">🔍</button>
+            <input type="text" name="q" placeholder="Buscar..." style="padding: 5px 10px; border-radius: 20px; border: none; outline: none; width: 150px;">
+            <button type="submit" style="background:none; border:none; cursor:pointer; margin-left:5px;">🔍</button>
         </form>
     </div>
 </nav>
